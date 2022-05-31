@@ -1,0 +1,16 @@
+# --- # my first playbook
+# - hosts: localhost
+#   user : ansible
+#   become: yes
+#   connection: ssh
+#   gather_facts: yes
+
+
+- name: Echo 
+  hosts: localhosts
+  connection: local
+
+  tasks:
+  - name: Print debug message
+    debug:
+      msg: Hello, world!
